@@ -8,7 +8,6 @@ package ru.mirea.lab1;
 public class Task6 {
     public void runTask() {
         int cnt = 10;
-        double result = 0.0;
 
         System.out.println("Первые " + cnt + " чисел гармонического ряда:\n");
         harmonic(cnt);
