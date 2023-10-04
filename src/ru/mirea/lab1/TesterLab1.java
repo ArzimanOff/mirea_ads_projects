@@ -25,7 +25,7 @@ package ru.mirea.lab1;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Lab1 {
+public class TesterLab1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Практическая работа №1." +

@@ -19,9 +19,7 @@ public class Task7 {
         while (true) {
             if (scanner.hasNextInt()) {
                 num = scanner.nextInt();
-                if (num > 0) {
-                    break;
-                }
+                break;
             } else {
                 System.out.println("Ошибка, введите число заново: ");
                 scanner.next(); // Очистка ввода
@@ -30,14 +28,27 @@ public class Task7 {
 
         answer = factorial(num);
 
-        System.out.printf("Факториал числа %d = %d", num, answer);
+        if(answer >= 1){
+            System.out.printf("Факториал числа %d = %d", num, answer);
+        } else {
+            System.out.printf("Факториал числа %d не существует, т.к. оно отрицательное!", num);
+        }
     }
 
     public int factorial(int n) {
-        int result = 1;
-        for (int i = 1; i <= n; i++) {
-            result *= i;
+        int result;
+
+        if (n == 0) {
+            result = 1;
+        } else if (n < 0) {
+            result = -1;
+        } else {
+            result = 1;
+            for (int i = 1; i <= n; i++) {
+                result *= i;
+            }
         }
+
         return result;
     }
 }
