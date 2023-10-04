@@ -1,4 +1,4 @@
-package ru.mirea.lab2;
+package ru.mirea.lab2.task2;
 
 import java.util.Locale;
 import java.util.Scanner;
@@ -67,5 +67,7 @@ public class TestBall {
 
         // Выводим информацию о мяче с использованием метода toString
         System.out.println(ball.toString());
+
+        scanner.close();
     }
 }

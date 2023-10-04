@@ -1,4 +1,4 @@
-package ru.mirea.lab2;
+package ru.mirea.lab2.task1;
 
 public class Author {
     String name;

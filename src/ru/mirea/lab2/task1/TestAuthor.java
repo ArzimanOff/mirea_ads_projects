@@ -15,7 +15,7 @@
 +toString(): String
 */
 
-package ru.mirea.lab2;
+package ru.mirea.lab2.task1;
 public class TestAuthor {
     public static void main(String[] args) {
         Author author = new Author("John Doe", "old@example.com", 'M');
