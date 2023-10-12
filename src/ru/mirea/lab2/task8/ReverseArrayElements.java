@@ -1,8 +1,16 @@
 package ru.mirea.lab2.task8;
 
+import java.util.Scanner;
+
 public class ReverseArrayElements {
     public static void main(String[] args) {
-        String[] strArray = {"apple", "banana", "cherry", "date", "fig"};
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Введите элементы массива в строку через пробел: ");
+        String input = scanner.nextLine();
+
+        String[] strArray = input.split(" ");
 
         System.out.println("Исходный массив:");
         for (String element : strArray) {
