@@ -8,10 +8,6 @@ Circle и второе поле количество элементов в ма�
 
 package ru.mirea.lab3.task2;
 
-import ru.mirea.lab2.task7.Book;
-
-import java.util.Arrays;
-import java.util.Comparator;
 import java.util.Random;
 import java.util.Scanner;
 
