@@ -1,3 +1,25 @@
+/*
+По UML диаграмме класса, представленной ниже написать
+программу, которая состоит из двух классов. Один из них Ball должен
+реализовывать сущность мяч, а другой с названием TestBall тестировать работу
+созданного класса. Класс Ball должен содержать реализацию методов,
+представленных на UML. Диаграмма на рисунке описывает сущность Мяч
+написать программу. Класс Ball моделирует движущийся мяч
+
+UML Ball:
+
+-x:double = 0.0
+-y:double = 0.0
++Ball(x:double, y: double) +Ball()
++getX():double
++setX(x:double): void
++getY(): double
++setY(y:double): void
++setXY(x:double, y:double):void
++move(xDisp:double, yDisp:double) : void
++toString():String
+*/
+
 package ru.mirea.lab2.task2;
 
 import java.util.Locale;

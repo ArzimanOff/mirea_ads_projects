@@ -1,3 +1,8 @@
+/*
+Напишите программу HowMany.java, которая определит, сколько
+слов Вы ввели с консоли.
+*/
+
 package ru.mirea.lab2.task10;
 
 import java.util.Scanner;
