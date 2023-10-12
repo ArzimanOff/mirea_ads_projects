@@ -1,5 +1,7 @@
 package ru.mirea.lab2.task9;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -32,7 +34,7 @@ public class Poker {
         scanner.close();
     }
 
-    private static List<String> getDeck() {
+    private static @NotNull List<String> getDeck() {
         List<String> deck = new ArrayList<>();
         String[] suits = { "Пики", "Черви", "Бубны", "Крести" };
         String[] ranks = { "2", "3", "4", "5", "6", "7", "8", "9", "10", "Валет", "Дама", "Король", "Туз" };
