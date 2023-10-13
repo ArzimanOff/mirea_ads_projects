@@ -9,14 +9,18 @@ package ru.mirea.lab1;
 
 import java.util.Scanner;
 
-public class Task3 {
-    Scanner scanner = new Scanner(System.in);
+public class Task3 extends AbstractTask {
     int size; // Размер массива
     int sum; // Сумма элементов массива
     int[] numbers; // Массив
     double average; // Среднее арифметическое элементов массива
 
-    public void runTask() {
+    Task3(Scanner scanner) {
+        super(scanner);
+    }
+
+    @Override
+    public void run() {
         size = inputArraySize();
         numbers = fillArray(size);
         sum = sumOfArrayElements(numbers);
@@ -24,8 +28,6 @@ public class Task3 {
 
         System.out.println("Сумма элементов массива: " + sum);
         System.out.println("Среднее арифметическое элементов массива: " + average);
-
-        scanner.close();
     }
 
     public int inputArraySize() {

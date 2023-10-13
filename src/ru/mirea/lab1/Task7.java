@@ -9,10 +9,11 @@ package ru.mirea.lab1;
 
 import java.util.Scanner;
 
-public class Task7 {
+public class Task7 implements Runnable {
     Scanner scanner = new Scanner(System.in);
 
-    public void runTask() {
+    @Override
+    public void run() {
         int num;
         int answer;
         System.out.println("Факториал какого числа найти?\nВведите число: ");

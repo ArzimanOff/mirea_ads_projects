@@ -9,8 +9,7 @@ package ru.mirea.lab1;
 
 import java.util.Scanner;
 
-public class Task4 {
-    Scanner scanner = new Scanner(System.in);
+public class Task4  extends AbstractTask {
     int size; // Размер массива
     int max; // Максимальный элемент массива
     int min; // Минимальный элемент массива
@@ -18,7 +17,12 @@ public class Task4 {
     int sum_do_while = 0;
     int[] numbers; // Массив
 
-    public void runTask() {
+    Task4(Scanner scanner) {
+        super(scanner);
+    }
+
+    @Override
+    public void run() {
         size = inputArraySize();
         numbers = fillArray(size);
         max = findMaxElementOfArray(numbers);
@@ -30,8 +34,6 @@ public class Task4 {
         System.out.println("Сумма элементов массива 2: " + sum_do_while);
         System.out.println("Максимум: " + max);
         System.out.println("Минимум: " + min);
-
-        scanner.close();
     }
 
     public int inputArraySize() {

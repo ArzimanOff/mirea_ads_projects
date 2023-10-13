@@ -5,8 +5,9 @@
 
 package ru.mirea.lab1;
 
-public class Task6 {
-    public void runTask() {
+public class Task6 implements Runnable {
+    @Override
+    public void run() {
         int cnt = 10;
 
         System.out.println("Первые " + cnt + " чисел гармонического ряда:\n");
