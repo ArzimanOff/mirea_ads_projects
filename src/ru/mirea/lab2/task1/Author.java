@@ -34,4 +34,7 @@ public class Author {
                 "\nEmail: " + this.email +
                 "\nПол: " + this.gender;
     }
+
+
+
 }
