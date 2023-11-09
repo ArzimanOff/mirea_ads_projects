@@ -5,7 +5,7 @@ import org.jetbrains.annotations.NotNull;
 import java.math.BigInteger;
 import java.util.Scanner;
 
-public class InnNumChecker {
+public class InnNumTester {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         while(true){
