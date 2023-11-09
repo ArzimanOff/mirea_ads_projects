@@ -1,4 +1,4 @@
-package ru.mirea.lab_20.task1;
+package ru.mirea.lab_20;
 
 import java.io.Serializable;
 

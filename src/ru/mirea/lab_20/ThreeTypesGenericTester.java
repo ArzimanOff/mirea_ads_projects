@@ -1,4 +1,4 @@
-package ru.mirea.lab_20.task1;
+package ru.mirea.lab_20;
 
 public class ThreeTypesGenericTester {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package ru.mirea.lab_20.task1;
+package ru.mirea.lab_20;
 
 public class ThreeGeneric<T extends String, V extends Animal, K extends Number> {
     private T typeObjT;
