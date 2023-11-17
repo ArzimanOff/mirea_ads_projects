@@ -101,5 +101,6 @@ public class Tester {
 
         System.out.println("Вывод данных окружностей, хранящихся в массиве:\n");
         tester.displayCircles();
+        scanner.close();
     }
 }

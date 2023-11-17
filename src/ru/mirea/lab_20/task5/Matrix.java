@@ -1,6 +1,8 @@
 package ru.mirea.lab_20.task5;
 
 
+import org.jetbrains.annotations.NotNull;
+
 public class Matrix<T extends Number> {
     private T[][] data;
     private int row;
@@ -20,7 +22,7 @@ public class Matrix<T extends Number> {
         data[row][col] = value;
     }
 
-    public void checkMatrixBounds(Matrix<T> other){
+    public void checkMatrixBounds(@NotNull Matrix<T> other){
         if (data.length != other.data.length || data[0].length != other.data[0].length) {
             throw new IllegalArgumentException("Для операций сложения и вычитания, матрицы должны быть одинаковых размеров");
         }
