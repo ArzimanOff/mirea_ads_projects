@@ -7,10 +7,9 @@ public class Exception2 {
         exceptionDemo();
     }
     public static void exceptionDemo() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Введите число: ");
 
-        try {
+        try (Scanner scanner = new Scanner(System.in)) {
+            System.out.print("Введите число: ");
             String intString = scanner.next();
             int i = Integer.parseInt(intString);
             System.out.println(12 / i);
@@ -21,8 +20,6 @@ public class Exception2 {
         } catch (Exception e) {
             // обработка других видов исключений
             System.out.println("Произошла ошибка: " + e.getMessage());
-        } finally {
-            scanner.close(); // Закрываем сканер, чтобы освободить ресурсы
         }
     }
 
