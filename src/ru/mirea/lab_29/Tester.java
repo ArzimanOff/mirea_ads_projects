@@ -32,12 +32,16 @@ public class Tester {
 
     public static void main(String[] args) {
         try (Scanner scanner = new Scanner(System.in)) {
+            System.out.println("Введите кол-во городов в стране: ");
             // Вводим количество городов
             int N = scanner.nextInt();
             // Создаем матрицу смежности
             int[][] adjacencyMatrix = new int[N][N];
+
             // Создаем экземпляр счетчика дорог
             RoadCounter roadCounter;
+
+            System.out.println("Введите матрицу смежности городов: ");
             // Заполняем матрицу смежности
             for (int i = 0; i < N; i++) {
                 for (int j = 0; j < N; j++) {
@@ -50,5 +54,6 @@ public class Tester {
         } catch (Exception e) {
             System.err.println("Ошибка ввода данных: " + e.getMessage());
         }
+
     }
 }
