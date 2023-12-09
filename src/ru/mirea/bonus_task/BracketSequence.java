@@ -1,14 +1,10 @@
 package ru.mirea.bonus_task;
 
-import org.jetbrains.annotations.NotNull;
-
 public class BracketSequence {
-    private final String exp;
     private final boolean isBalanced;
 
     public BracketSequence(String exp) {
-        this.exp = exp;
-        this.isBalanced = checkBalance(this.exp);
+        this.isBalanced = checkBalance(exp);
     }
 
     public static boolean checkBalance(String exp) {

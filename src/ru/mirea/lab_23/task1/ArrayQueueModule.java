@@ -11,7 +11,7 @@ import ru.mirea.lab_23.task2.AbstractQueue;
 public class ArrayQueueModule extends AbstractQueue {
     private Object[] queue;
 
-    private static ArrayQueueModule instance;
+    private static ArrayQueueModule instance ;
 
     // PRE: queue - null
     // POST: queue.size = 0;

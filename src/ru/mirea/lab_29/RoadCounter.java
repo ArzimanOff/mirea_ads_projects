@@ -3,7 +3,7 @@ package ru.mirea.lab_29;
 public class RoadCounter {
     private final int numOfCities;
     private final int[][] adjacencyMatrix;
-    private int numOfRoads;
+    private final int numOfRoads;
 
     public RoadCounter(int numOfCities, int[][] adjacencyMatrix) {
         this.numOfCities = numOfCities;
@@ -40,7 +40,7 @@ public class RoadCounter {
         int cnt = 0;
         for (int i = 0; i < numOfCities; i++) {
             for (int j = i; j < numOfCities; j++) {
-                if (adjacencyMatrix[i][j] >= 0) {
+                if (adjacencyMatrix[i][j] == 1) {
                     cnt += adjacencyMatrix[i][j];
                 }
             }

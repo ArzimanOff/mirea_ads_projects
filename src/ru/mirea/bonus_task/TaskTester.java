@@ -19,6 +19,7 @@ public class TaskTester {
         System.out.println("Последовательность 2: " + test2.isBalanced());
         System.out.println("Последовательность 3: " + test3.isBalanced());
         System.out.println("Последовательность 4: " + test4.isBalanced());
+
         //System.out.println("Последовательность 5: " + test5.isBalanced());
     }
 }
